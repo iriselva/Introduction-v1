@@ -9,6 +9,6 @@ A webpage for delicous cat treats!
 
 ## Demo
 
-Go to [Demo](www.surgelink.com) to view a demo of the page\.  
+Go to [Yummins](http://yummins.surge.sh/) to view a demo of the page\.  
 
 ---
