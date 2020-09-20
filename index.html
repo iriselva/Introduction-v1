@@ -18,9 +18,26 @@
         <div class="logo">
             <img src="img/cat-logo.svg" alt="Yummins logo">
         </div>
-        <nav>     
-            <div class="hamburger">
-                <a href="#"><img src="img/hamburger.svg" alt="Menu"></a>
+        <nav>  
+            <div class="menu-wrap"> 
+                <input type="checkbox" class="toggler"> 
+                <div class="hamburger"><div></div></div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Product">Product</a></li>
+                                <li><a href="#Testimonials">Testimonials</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
             </div>
         </nav>
     </header>
@@ -31,7 +48,7 @@
     
         <!-- About product section -->
 
-        <section class="first-container">
+        <section class="first-container" id="About">
             <h1>Yummins</h1>
             <div class="about-container">
                 <img src="img/vitaminjar.svg" alt="Yummins Vitaminjar">
@@ -44,7 +61,7 @@
 
     <!-- Product details section -->
 
-        <section class="second-container">
+        <section class="second-container" id="Product">
             <div>
 
                 <h2>Our product</h2>
@@ -73,7 +90,7 @@
 
     <!-- Testimonials section -->
 
-        <section class="third-container">
+        <section class="third-container" id="Testimonials">
             <div class="testimonials">
                 
                 <div class="bub">
@@ -100,7 +117,7 @@
         <section class="fourth-container">
             <div class="call-to-action">
                 <div class="buy-action">
-                    <img src="img/bigjar.svg" alt="Yummins product jar">
+                    <img src="img/Yumminsjar-logo.svg" alt="Yummins product jar">
                     <h3>Try Yummins today!</h3>
                     <button class="btn btn-text">Buy now</button>
                 </div>
@@ -116,7 +133,7 @@
     <!-- Footer with contact information -->
     
     <footer>
-        <div class="footer-container">
+        <div class="footer-container" id="Contact">
             <h2>Yummins</h2>
             <div class="social-media">
                 <a href="https://www.instagram.com/"><img src="img/Instagram.svg" alt="Instagram"></a>
@@ -129,3 +146,7 @@
     
 </body>
 </html>
+
+<!-- 
+<div class="hamburger">
+    <a href="#home"><img src="img/hamburger.svg" alt="Menu"></a> -->
