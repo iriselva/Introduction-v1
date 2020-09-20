@@ -1,0 +1,382 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 0;
+    grid-template-rows: 140px 3000px 140px;
+}
+
+
+/* Typography */
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    letter-spacing: 1px;
+    color: #4B4A45;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #4B4A45;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #4B4A45;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #4B4A45;
+}
+
+.btn-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Colors */
+
+.bg-darkblue {
+    color: #1DABBE;
+}
+
+.bg-lightblue {
+    color: #6EE7EF;
+}
+
+.bg-yellow {
+    color: #F1E891;
+}
+
+.bg-gray {
+    color: #4B4A45;
+}
+
+.bg-light-gray {
+    color: #E5E5E5;
+}
+
+main {
+    width: 100%;
+    height: 300px;
+}
+
+/* Header */
+
+
+
+header {
+    display: grid;
+    grid-row: 1;
+    width: 100%;
+    height: 140px;
+    background: #6EE7EF;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 4px #E5E5E5;
+
+}
+
+nav {
+    position: absolute;
+    top: 26px;
+    right: 100px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-row: 3;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    background: #6EE7EF;
+}
+
+footer h2 {
+    color: white;
+    position: relative;
+    left: 100px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social-media a {
+    padding: 1rem 1rem;
+}
+
+
+.footer-logo {
+    position: relative;
+    bottom: 70px;
+    right: 100px;
+}
+
+/* About Section */
+
+main {
+    display: grid;
+    grid-row: 2;
+}
+
+.first-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+
+.about-container {
+    display: flex;
+    width: 900px;
+    height: 440px;
+    border: 5px solid #1DABBE;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.about-container img {
+    flex: 1;
+    padding: 50px;
+}
+
+.about-text {
+    flex: 2;
+    text-align: left;
+    flex-direction: column;
+    padding-right: 50px;
+    margin: 0;
+}
+
+/* Product section */
+
+.second-container {
+    background: #6EE7EF;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px 100px 50px 100px;
+}
+
+.product-details li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 350px;
+}
+
+
+.product-details p {
+    width: 244px;
+    margin: 0;
+}
+
+/* Testimonial section */
+
+.third-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 100px;
+
+}
+
+.bub {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 500px 300px;
+    align-items: start;
+}
+
+.bubble {
+    background: #F1E891;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.maru {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 300px 500px;
+    align-items: end;
+    justify-items: end;
+}
+
+    /* Testimonial bubble corner */
+
+.right-bottom::after {
+    content: '';
+    border-bottom: 32px solid #F1E891;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -24px;
+    bottom: 0;
+}
+
+.left-top::after {
+    content: '';
+    border-top: 32px solid #F1E891;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -24px;
+    top: 0;
+}
+
+/* Call to action section */
+
+.fourth-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 640px;
+    text-align: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+.call-to-action {
+    background: #E5E5E5;
+    height: 240px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+
+.buy-action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0px;
+    height: 790px;
+    margin: auto;
+}
+
+.btn {
+    width: 200px;
+    height: 80px;
+    background: #F1E891;
+    border-radius: 20px;
+    text-align: center;
+    border-style: none;
+    filter: drop-shadow(0 4px 4px #4B4A45);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1DABBE;
+    color: white;
+}
+
+.tail {
+    position: absolute;
+    min-width: 500px;
+    min-height: 500px;
+    bottom: 65px;
+    left: -40px;
+}
+
+.tail:hover img{
+    animation: rotate 2s infinite;
+    transform: rotate;
+    transition: transform 0.4s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
